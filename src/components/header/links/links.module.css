@@ -13,8 +13,8 @@
   cursor: pointer; 
 }
 
-.menuButton,
-.mobileLinks {
+.menu__btn,
+.mobile__links {
   display: none; 
 }
 
@@ -23,14 +23,12 @@
     display: none; 
   }
 
-  .menuButton {
+  .menu__btn {
     display: block; 
     cursor: pointer; 
-    font-size: 22px; 
-    font-weight: bold; 
   }
 
-  .mobileLinks {
+  .mobile__links {
     position: absolute;
     top: 100px;
     right: 0;

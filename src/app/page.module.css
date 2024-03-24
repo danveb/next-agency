@@ -1,0 +1,61 @@
+.container {
+  display: flex; 
+  gap: 100px; 
+}
+
+.text__container {
+  flex: 1; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 50px; 
+}
+
+.text__container h1 {
+  font-size: 90px; 
+}
+
+.text__container p {
+  font-size: 18px;
+  line-height: 1.7; 
+  font-style: italic; 
+}
+
+.button__container {
+  display: flex; 
+  gap: 20px; 
+}
+
+.button {
+  padding: 15px 18px; 
+  min-width: 120px; 
+  cursor: pointer; 
+  border: none; 
+  outline: none; 
+  border-radius: 5px; 
+}
+
+.button:first-child {
+  background-color: var(--btn);
+  color: var(--text); 
+}
+
+.img__container {
+  height: 50vh; 
+  flex: 1; 
+  position: relative; 
+}
+
+.hero__img {
+  object-fit: cover; 
+  overflow: hidden; 
+}
+
+@media (max-width: 1024px) {
+  .img__container { 
+    display: none; 
+  }
+  
+  .hero__img {
+    display: none; 
+  }
+}

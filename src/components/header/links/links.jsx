@@ -1,8 +1,9 @@
 "use client"
 
 import { useState } from "react";
-import styles from "./links.module.css";
+import Image from "next/image"; 
 import NavLink from "./navLink/navLink";
+import styles from "./links.module.css";
 
 const links = [
   {
@@ -40,7 +41,8 @@ export default function Links() {
   return (
     <main className={styles.container}>
       <div className={styles.links}>
-        {links.map((link) => (
+        {/* filter out Home route when in desktop mode; only present in mobile */}
+        {links.filter((link) => link.title !== "Home").map((link) => (
           <NavLink item={link} key={link.id} />
         ))} 
         {authenticated ? (
@@ -52,8 +54,16 @@ export default function Links() {
           <NavLink item={{ title: "Login", path: "/login" }} />
         )}
       </div>
-      <button className={styles.menuButton} onClick={() => setOpen((prev) => !prev)}>MENU</button>
-      {open && <div className={styles.mobileLinks}>
+      <div className={styles.menu__btn}>
+        <Image 
+          src="/menu.svg"
+          width={25}
+          height={25}
+          alt="hamburger menu icon"
+          onClick={() => setOpen((prev) => !prev)}
+        />
+      </div>
+      {open && <div className={styles.mobile__links}>
         {links.map((link) => (
           <NavLink item={link} key={link.id} />
         ))}
