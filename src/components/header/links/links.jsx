@@ -41,8 +41,8 @@ export default function Links() {
   return (
     <main className={styles.container}>
       <div className={styles.links}>
-        {/* filter out Home route when in desktop mode; only present in mobile */}
         {links.filter((link) => link.title !== "Home").map((link) => (
+          // filter out Home route when in desktop mode; only present in mobile
           <NavLink item={link} key={link.id} />
         ))} 
         {authenticated ? (
@@ -65,7 +65,8 @@ export default function Links() {
       </div>
       {open && <div className={styles.mobile__links}>
         {links.map((link) => (
-          <NavLink item={link} key={link.id} />
+          // passing setOpen state so we can close mobile navbar when eventually clicking on a link
+          <NavLink item={link} key={link.id} setOpen={setOpen} />
         ))}
         </div>
       }
