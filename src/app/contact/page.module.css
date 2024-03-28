@@ -1,0 +1,55 @@
+.container {
+  display: flex; 
+  align-items: center; 
+  gap: 100px; 
+}
+
+.img__container {
+  height: 500px; 
+  flex: 1; 
+  position: relative; 
+  display: flex; 
+}
+
+.img {
+  object-fit: cover; 
+}
+
+.form__container {
+  flex: 1; 
+}
+
+.form {
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px; 
+}
+
+.form input, 
+.form textarea {
+  padding: 20px; 
+  border-radius: 3px; 
+  border: none; 
+  outline: none; 
+  background-color: var(--bgSoft); 
+  color: var(--text); 
+  letter-spacing: 1px; 
+  resize: none; 
+}
+
+.form button {
+  padding: 15px 18px;
+  background-color: var(--bg-next); 
+  color: var(--text); 
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold; 
+}
+
+@media (max-width: 1024px) {
+  .img__container {
+    display: none;
+  }
+}

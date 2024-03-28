@@ -1,5 +1,31 @@
+import Image from "next/image";
+import styles from "./page.module.css";
+
 export default function Contact() {
   return (
-    <main>Contact</main>
-  )
+    <main className={styles.container}>
+      <div className={styles.img__container}>
+        <Image
+          src="/contact.png"
+          alt="contact image"
+          fill
+          className={styles.img}
+        />
+      </div>
+      <div className={styles.form__container}>
+        <form action="" className={styles.form}>
+          <input type="text" placeholder="Full name" name="name" />
+          <input type="email" placeholder="Email address" name="email" />
+          <input type="text" placeholder="Phone" name="phone" />
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </main>
+  );
 }

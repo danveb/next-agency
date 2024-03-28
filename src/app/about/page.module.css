@@ -28,7 +28,6 @@
 }
 
 .box {
-  /* flex-wrap: no-wrap;   */
   display: flex; 
   flex-direction: column; 
   gap: 10px; 
@@ -42,6 +41,7 @@
 .box p {
   font-size: 14px; 
   font-style: initial; 
+  font-weight: bold; 
 }
 
 .img__container {
