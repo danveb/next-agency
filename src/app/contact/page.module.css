@@ -2,6 +2,7 @@
   display: flex; 
   align-items: center; 
   gap: 100px; 
+  height: calc(100vh - 200px); 
 }
 
 .img__container {
@@ -19,6 +20,10 @@
   flex: 1; 
 }
 
+.form__title {
+  display: none; 
+}
+
 .form {
   display: flex; 
   flex-direction: column; 
@@ -27,6 +32,7 @@
 
 .form input, 
 .form textarea {
+  font-family: inherit; 
   padding: 20px; 
   border-radius: 3px; 
   border: none; 
@@ -52,4 +58,13 @@
   .img__container {
     display: none;
   }
+}
+
+@media (max-width: 1024px) {
+  .form__title {
+    display: block; 
+    font-size: 40px; 
+    text-align: center; 
+    margin: 50px 0; 
+    }
 }

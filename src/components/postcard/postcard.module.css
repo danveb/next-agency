@@ -1,0 +1,43 @@
+.container {
+  display: flex; 
+  flex-direction: column; 
+  gap: 20px; 
+  margin-bottom: 20px; 
+}
+
+.top {
+  display: flex; 
+}
+
+.img__container {
+  width: 90%; 
+  height: 400px; 
+  position: relative; 
+}
+
+.img {
+  object-fit: cover; 
+}
+
+.date {
+  font-size: 12px; 
+  transform: rotate(270deg); 
+  margin: auto; 
+}
+
+.bottom h1 {
+  font-size: 20px; 
+  margin-bottom: 20px; 
+  width: 85%;
+}
+
+.bottom p {
+  margin-bottom: 20px; 
+  font-weight: 300; 
+  color: gray; 
+  width: 85%; 
+}
+
+.link {
+  text-decoration: underline; 
+}

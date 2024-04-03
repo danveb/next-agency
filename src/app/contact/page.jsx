@@ -13,6 +13,7 @@ export default function Contact() {
         />
       </div>
       <div className={styles.form__container}>
+        <h1 className={styles.form__title}>Say hi? Just drop a message.</h1>
         <form action="" className={styles.form}>
           <input type="text" placeholder="Full name" name="name" />
           <input type="email" placeholder="Email address" name="email" />
@@ -20,7 +21,7 @@ export default function Contact() {
           <textarea
             name="message"
             cols="30"
-            rows="10"
+            rows="4"
             placeholder="Message"
           ></textarea>
           <button type="submit">Send</button>

@@ -11,7 +11,7 @@
 }
 
 .text__container h1 {
-  font-size: 90px; 
+  font-size: 80px; 
 }
 
 .text__container p {
@@ -51,6 +51,14 @@
 }
 
 @media (max-width: 1024px) {
+  .container {
+    text-align: center; 
+  }
+
+  .button__container {
+    justify-content: center; 
+  }
+
   .img__container { 
     display: none; 
   }

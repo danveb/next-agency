@@ -1,0 +1,60 @@
+.container {
+  display: flex; 
+  gap: 100px; 
+}
+
+.img__container {
+  flex: 1; 
+  position: relative; 
+  height: calc(100vh - 200px); 
+}
+
+.img {
+  object-fit: cover; 
+}
+
+.text__container {
+  flex: 2; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 50px; 
+}
+
+.text__container h1 {
+  font-size: 60px; 
+}
+
+.detail__container {
+  display: flex; 
+  gap: 20px; 
+}
+
+.avatar {
+  object-fit: cover; 
+  border-radius: 50%; 
+}
+
+.detail__text {
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.detail__title {
+  color: gray; 
+  font-weight: bold; 
+}
+
+.detail__value {
+  font-weight: 500; 
+}
+
+.content {
+  font-size: 20px; 
+}
+
+@media (max-width: 768px) {
+  .img__container {
+    display: none; 
+  }
+}

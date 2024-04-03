@@ -50,6 +50,10 @@
 }
 
 @media (max-width: 1024px) {
+  .text__container {
+    text-align: center; 
+  }
+
   .img__container {
     display: none; 
   }
