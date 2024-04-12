@@ -61,10 +61,14 @@
 }
 
 @media (max-width: 1024px) {
+  .container {
+    align-items: initial; 
+  }
+
   .form__title {
     display: block; 
-    font-size: 40px; 
+    font-size: 50px; 
     text-align: center; 
-    margin: 50px 0; 
+    margin: 40px 0; 
     }
 }
