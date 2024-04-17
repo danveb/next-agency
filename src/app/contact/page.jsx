@@ -1,6 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+// TODO: implement react-toastify for notification once user submits a message
+// TODO: implement EmailJS to send emails to admin
+
 export default function Contact() {
   return (
     <main className={styles.container}>
